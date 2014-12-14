@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D947A5BD-B473-4C01-84E7-E981D422D88C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AuditApp.Android</RootNamespace>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>AuditApp.Android</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <DocumentationFile>bin\Debug\AuditApp.Android.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <DocumentationFile>bin\Release\AuditApp.Android.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndroidAuditUtils.cs" />
+    <Compile Include="AndroidInterceptAudit.cs" />
+    <Compile Include="IAuditPrompt.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="..\AuditApp.Common\AuditBase.cs">
+      <Link>Common\AuditBase.cs</Link>
+    </Compile>
+    <Compile Include="AndroidPlaystoreAudit.cs" />
+    <Compile Include="AndroidAppStorage.cs" />
+    <Compile Include="..\AuditApp.Common\IAppStorage.cs">
+      <Link>Common\IAppStorage.cs</Link>
+    </Compile>
+    <Compile Include="..\AuditApp.Common\INegativeResponseInterceptCallback.cs">
+      <Link>Common\INegativeResponseInterceptCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\AuditApp.Common\InterceptAuditBase.cs">
+      <Link>Common\InterceptAuditBase.cs</Link>
+    </Compile>
+    <Compile Include="..\AuditApp.Common\IPositiveResponseInterceptCallback.cs">
+      <Link>Common\IPositiveResponseInterceptCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\AuditApp.Common\IReviewAppPlaystoreCallback.cs">
+      <Link>Common\IReviewAppPlaystoreCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\AuditApp.Common\PlaystoreAuditBase.cs">
+      <Link>Common\PlaystoreAuditBase.cs</Link>
+    </Compile>
+    <Compile Include="..\AuditApp.Common\UserSuggestionEventArgs.cs">
+      <Link>Common\UserSuggestionEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\AuditApp.Common\IValidateUserIdentifier.cs">
+      <Link>Common\IValidateUserIdentifier.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\layout\intercept_suggestion_layout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\Styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+</Project>

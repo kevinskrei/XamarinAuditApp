@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <style name="intercept_suggestion_headerstyle">
+    <item name="android:textSize">16sp</item>
+    <item name="android:padding">4dp</item>
+  </style>
+  <style name="intercept_suggestion_commentstyle">
+  </style>
+ <style name="intercept_suggestion_donebuttonstyle">
+ </style>
+  <style name="intercept_suggestion_idstyle">
+ </style>
+ <style name="intercept_suggestion_background">
+ 	<item name="android:padding">4dp</item>
+ </style>
+</resources>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <style name="intercept_suggestion_headerstyle">
+    <item name="android:textSize">22sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:padding">8dp</item>
+    <item name="android:textColor">#000000</item>
+  </style>
+  <style name="intercept_suggestion_commentstyle">
+  	<item name="android:layout_margin">8dp</item>
+  </style>
+ <style name="intercept_suggestion_donebuttonstyle">
+ 	<item name="android:background">#A9BA74</item>
+ 	<item name="android:padding"> 10dp</item>
+ </style>
+  <style name="intercept_suggestion_idstyle">
+ </style>
+ <style name="intercept_suggestion_background">
+ 	<item name="android:padding"> 10dp</item>
+ 	<item name="android:background">#D3E891</item>
+ </style>
+</resources>
+

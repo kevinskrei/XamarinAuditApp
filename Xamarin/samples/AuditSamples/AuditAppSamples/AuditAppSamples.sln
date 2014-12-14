@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaystoreAudit", "PlaystoreAudit\PlaystoreAudit.csproj", "{4A4DB192-B55D-40E1-982F-580B96BDB74E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterceptAuditDefault", "InterceptAuditDefault\InterceptAuditDefault.csproj", "{9DAE522F-363D-461F-8121-BBD53BBA9FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterceptCustomLocalized", "InterceptCustomLocalized\InterceptCustomLocalized.csproj", "{3567521A-D3D2-4D76-A967-C6EC8988D167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3567521A-D3D2-4D76-A967-C6EC8988D167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3567521A-D3D2-4D76-A967-C6EC8988D167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3567521A-D3D2-4D76-A967-C6EC8988D167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3567521A-D3D2-4D76-A967-C6EC8988D167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4DB192-B55D-40E1-982F-580B96BDB74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4DB192-B55D-40E1-982F-580B96BDB74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4DB192-B55D-40E1-982F-580B96BDB74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4DB192-B55D-40E1-982F-580B96BDB74E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAE522F-363D-461F-8121-BBD53BBA9FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAE522F-363D-461F-8121-BBD53BBA9FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAE522F-363D-461F-8121-BBD53BBA9FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAE522F-363D-461F-8121-BBD53BBA9FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = InterceptCustomLocalized\InterceptCustomLocalized.csproj
+	EndGlobalSection
+EndGlobal

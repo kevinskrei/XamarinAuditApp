@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    style="@style/intercept_suggestion_background"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        style="@style/intercept_suggestion_headerstyle"
+        android:layout_height="wrap_content"
+        android:id="@+id/intercept_suggestion_header" />
+    <EditText
+        android:layout_width="fill_parent"
+        style="@style/intercept_suggestion_idstyle"
+        android:layout_height="wrap_content"
+        android:id="@+id/intercept_suggestion_id" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/intercept_suggestion_commentstyle"
+        android:id="@+id/intercept_suggestion_comment" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/intercept_suggestion_donebuttonstyle"
+        android:id="@+id/intercept_suggestion_done" />
+</LinearLayout>

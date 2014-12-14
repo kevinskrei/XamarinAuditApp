@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7C73A50-E049-427A-963D-6A66801A554A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AuditApp.Common</RootNamespace>
+    <AssemblyName>AuditApp.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\AuditApp.Common.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\AuditApp.Common.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AuditBase.cs" />
+    <Compile Include="UserSuggestionEventArgs.cs" />
+    <Compile Include="IReviewAppPlaystoreCallback.cs" />
+    <Compile Include="INegativeResponseInterceptCallback.cs" />
+    <Compile Include="IPositiveResponseInterceptCallback.cs" />
+    <Compile Include="IAppStorage.cs" />
+    <Compile Include="PlaystoreAuditBase.cs" />
+    <Compile Include="InterceptAuditBase.cs" />
+    <Compile Include="IValidateUserIdentifier.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
